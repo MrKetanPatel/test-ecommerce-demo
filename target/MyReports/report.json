@@ -1,0 +1,75 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 7573877300,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the browser is initiated with url \"http://automationpractice.com/index.php\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://automationpractice.com/index.php\"",
+                  "offset": 34
+                }
+              ],
+              "location": "steps.dressesPageStepsDef.theBrowserIsInitiatedWithUrl(java.lang.String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-05-31T12:33:55.473Z",
+        "line": 6,
+        "name": "1- Select the highest price item and add it to the cart",
+        "description": "",
+        "id": "navigate-to-the-website-and-perform-scenario-1;1--select-the-highest-price-item-and-add-it-to-the-cart",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3261258300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I Click on the Dresses Menu",
+            "match": {
+              "location": "steps.dressesPageStepsDef.i_click_on_the_dresses_menu()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 6154352100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Select the highest price item",
+            "match": {
+              "location": "steps.dressesPageStepsDef.validate_Price()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Navigate to the website and perform scenario 1",
+    "description": "",
+    "id": "navigate-to-the-website-and-perform-scenario-1",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/01.Stories1.feature",
+    "tags": []
+  }
+]
