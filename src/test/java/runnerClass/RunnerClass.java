@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
         glue = {"steps"},
         plugin = {"pretty",
                 "json:target/MyReports/report.json"}
-        //publish = true
+
 )
 public class RunnerClass  {
 
