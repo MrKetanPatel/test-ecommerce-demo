@@ -19,17 +19,15 @@ public class BrowserFactory extends BrowserConstants {
                 WebDriverManager.firefoxdriver().setup();
                 return new FirefoxDriver();
             case CHROME:
+            default:
                 WebDriverManager.chromedriver().setup();
                 ChromeOptions chromeOptions = new ChromeOptions();
                 boolean headless = Boolean.parseBoolean(System.getProperty("headless"));
-                if (headless ==true)
+                if (headless)
                 {
                     chromeOptions.addArguments("--headless");
                 }
                 return new ChromeDriver(chromeOptions);
-            default:
-                WebDriverManager.chromedriver().setup();
-                return new ChromeDriver();
 
 
 
