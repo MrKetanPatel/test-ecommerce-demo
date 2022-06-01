@@ -1,8 +1,8 @@
 package pages;
 
-import utils.driverInitiate;
+import utils.DriverInitiate;
 
-public class navigation extends driverInitiate {
+public class Navigation extends DriverInitiate {
 
     public static void navigate_Url(String url)
     {

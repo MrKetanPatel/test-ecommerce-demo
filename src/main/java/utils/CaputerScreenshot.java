@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class caputerScreenshot {
+public class CaputerScreenshot {
 
     public static void Screenshot(WebDriver driver, String s) throws IOException {
         //SimpleDateFormat formatter = new SimpleDateFormat("dd-yy-hh:mm:ss");

@@ -11,6 +11,6 @@ import org.junit.runner.RunWith;
                 "json:target/MyReports/report.json"}
         //publish = true
 )
-public class runnerClass {
+public class RunnerClass  {
 
 }

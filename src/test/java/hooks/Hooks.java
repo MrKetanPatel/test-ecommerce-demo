@@ -2,13 +2,9 @@ package hooks;
 
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
-import io.cucumber.java.Scenario;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.BeforeTest;
-import utils.driverInitiate;
+import utils.DriverInitiate;
 
-public class hooks extends driverInitiate {
+public class Hooks extends DriverInitiate {
 
     @Before
     public void startup() {

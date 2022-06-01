@@ -1,7 +1,7 @@
 Feature: Navigate to the website and perform scenario 1
 
   Background:
-    Given the browser is initiated with url "http://automationpractice.com/index.php"
+    Given the browser is initiated with url "dressUI"
 
   Scenario: 1- Select the highest price item and add it to the cart
     When I Click on the Dresses Menu

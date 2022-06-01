@@ -1,6 +1,6 @@
 package utils;
 
-public class browserConstants {
+public class BrowserConstants {
     protected static final int FIREFOX = 1;
     protected static final int CHROME = 2;
     protected static final int HEADLESSCHROME = 4;

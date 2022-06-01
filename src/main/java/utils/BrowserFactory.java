@@ -6,7 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-public class browserFactory extends browserConstants{
+public class BrowserFactory extends BrowserConstants {
     protected static WebDriver apply() {
         String browser = System.getProperty("browser");
         int chosenBrowser;
@@ -20,15 +20,19 @@ public class browserFactory extends browserConstants{
                 return new FirefoxDriver();
             case CHROME:
                 WebDriverManager.chromedriver().setup();
-                return new ChromeDriver();
-            case HEADLESSCHROME:
-                System.setProperty("webdriver.chrome.driver", "src/main/java/utils/drivers/");
                 ChromeOptions chromeOptions = new ChromeOptions();
-                chromeOptions.addArguments("--headless");
+                boolean headless = Boolean.parseBoolean(System.getProperty("headless"));
+                if (headless ==true)
+                {
+                    chromeOptions.addArguments("--headless");
+                }
                 return new ChromeDriver(chromeOptions);
             default:
                 WebDriverManager.chromedriver().setup();
                 return new ChromeDriver();
+
+
+
         }
     }
 }
